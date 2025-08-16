@@ -1,0 +1,23 @@
+# Load manual_labels
+manual_labels = [ <put your codes here>
+	]
+
+# golden_labels (replace with your actual list)
+golden_labels = [
+<put your golden label codes here>
+]
+
+
+# Convert lists to sets (removes duplicates automatically)
+set_manual = set(manual_labels)
+set_golden = set(golden_labels)
+
+# Compute Jaccard similarity
+intersection = set_manual.intersection(set_golden)
+union = set_manual.union(set_golden)
+
+jaccard_similarity = len(intersection) / len(union)
+
+print("Intersection:", intersection)
+print("Union size:", len(union))
+print(f"Jaccard Similarity: {jaccard_similarity:.3f}")
