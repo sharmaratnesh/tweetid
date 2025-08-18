@@ -1,4 +1,5 @@
 #configure base url in the code and key in secrets.json file
+#cite this repository and author <Ratnesh K Sharma> if you use this piece of code
 import os, json, httpx
 import sys
 from datetime import datetime
